@@ -1,9 +1,12 @@
+import os
+
 f="sample.txt"
-try:
-    open(f,"a")
-except Exception as error:
-    print("Permissions denied")
-    
-else: 
-    f.write("world")
-    f.close()
+if os.path.isfile(f):
+    try:
+        open(f,"a")
+    except Exception as error:
+        print("Permissions denied")
+
+    else: 
+        f.write("world")
+        f.close()
