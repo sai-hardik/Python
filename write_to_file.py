@@ -1,9 +1,9 @@
 ####################################
 #code 1:
 import os
-
+path="C:\Users\babut\OneDrive\Desktop\sample.txt"
 f="sample.txt"
-if os.path.isfile(f):
+if os.path.isfile(path):
     try:
         open(f,"a")
     
