@@ -1,6 +1,6 @@
 f="sample.txt"
 try:
-    open(f)
+    open(f,"a")
 except Exception as error:
     print("Permissions denied")
     
