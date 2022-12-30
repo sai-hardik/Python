@@ -4,5 +4,6 @@ try:
 except Exception as error:
     print("Permissions denied")
     
-f.write("world")
-f.close()
+else: 
+    f.write("world")
+    f.close()
